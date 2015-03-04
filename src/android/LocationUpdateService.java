@@ -666,7 +666,7 @@ public class LocationUpdateService extends Service implements LocationListener {
             location.put("la", l.getLatitude());
             location.put("lo", l.getLongitude());
 //            location.put("accuracy", l.getAccuracy());
-//            location.put("speed", l.getSpeed());
+            location.put("s", l.getSpeed());
 //            location.put("bearing", l.getBearing());
 //            location.put("altitude", l.getAltitude());
             location.put("t", dao.dateToString(l.getRecordedAt()));
